@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html"><img src="./images/logo-vinfast.png" alt=""></a>
+        </div>
+        <ul class="menu">
+            <li class="menu-item"><a href="./index.html" class="menu-link" style="color: #e2e; border-bottom: 2px solid #e2e;">Trang chủ</a></li>
+            <li class="menu-item"><a href="./gioithieu.html" class="menu-link">Giới thiệu</a></li>
+            <li class="menu-item"><a href="./tintuc.html" class="menu-link">Tin tức</a></li>
+            <li class="menu-item"><a href="./sanpham.html" class="menu-link">Sản phẩm</a></li>
+            <li class="menu-item"><a href="./dangky.html" class="menu-link">Đăng ký lái thử</a></li>
+        </ul>
+    </header>
+    <div id="slider">
+        <img id="anh" name="anh" class="fade" src="./images/slide0.jpg" alt="">
+        <div id="prev">
+            <button onclick="prev()"><i class="fa-solid fa-chevron-left" style="color: #fff;"></i></button>
+        </div>
+        <div id="next">
+            <button onclick="next()"><i class="fa-solid fa-chevron-right" style="color: #fff;"></i></button>
+        </div> 
+    </div>
+    <div class="content">
+        <div class="container">
+
+            <div class="sanphamnoibat">
+                <h1 class="heading">SẢN PHẨM NỔI BẬT</h1>
+                <div class="sanpham-content">
+                    <div class="sanpham-item">
+                        <img src="./images/vinfast-fadi.png" alt="">
+                        <p>Vinfast Fadil</p>
+                    </div>
+                    <div class="sanpham-item">
+                        <img src="./images/lux_a2.0.png" alt="">
+                        <p>Vinfast Lux A2.0</p>
+                    </div>
+                    <div class="sanpham-item">
+                        <img src="./images/lux_sa2.0.png" alt="">
+                        <p>Vinfast Lux Sa 2.0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vinfast-hatinh">
+                <h1 class="heading">VINFAST HÀ TĨNH</h1>
+                <div class="vinfast-hatinh-content">
+                    <div class="content-left">
+                        <h2>Vinfast Hà Tĩnh</h2>
+                        <p>Vinfast Hà Tĩnh - Showroom 3S của VinFast Việt Nam</p>
+                        <p>Công ty TNHH Kinh Doanh Thương Mại Và Dịch Vụ Vinfast</p>
+                        <p>Ngành nghề kinh doanh: Kinh doanh ô tô, dịch vụ ô tô</p>
+                        <p>Kính gửi: Quý khách hàng Vinfast Hà Tĩnh !</p>
+                        <p>Trước tiên, chúng tôi xin bày tỏ lời cảm ơn chân thành và sâu sắc tới Quý khách
+                            hàng – những người luôn bày tỏ sự yêu mến và quan tâm đối với Vinfast Hà Tĩnh
+                            trong thời gian qua. Vinfast Hà Tĩnh - Showroom 3S của VinFast Việt Nam với các
+                            sản phẩm chất lượng cao của nhà sản xuất ô tô hàng đầu Việt Nam cộng với sự nỗ lực
+                            về kinh doanh và dịch vụ</p>
+                        <span>Showroom Vinfast Hà Tĩnh - Hotline : 0911 711 588</span>
+                    </div>
+                    <div class="content-right">
+                        <img src="./images/vinfast-hatinh.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tintuc">
+                <h1 class="heading">TIN TỨC - SỰ KIỆN</h1>
+                <div class="tintuc-list">
+                    <div class="tintuc-item">
+                        <img src="./images/fadil-668x446.jpg" alt="">
+                        <div class="box-text">
+                            <h5>Vinfast miễn phí vay 2 năm đầu tiên cho khách hàng mua Fadil</h5>
+                            <p>Ngày 15/11/2019, Công ty TNHH Sản xuất và Kinh doanh VinFast công bố chương
+                                trình siêu ưu đãi tài</p>
+                        </div>
+                    </div>
+                    <div class="tintuc-item">
+                        <img src="./images/tin-tuc-1-668x446.jpg" alt="">
+                        <div class="box-text">
+                            <h5>VinFast không còn là ‘hiện tượng’</h5>
+                            <p>Ngày 15/11/2019, Công ty TNHH Sản xuất và Kinh doanh VinFast công bố chương
+                                trình siêu ưu đãi tài</p>
+                        </div>
+                    </div>
+                    <div class="tintuc-item">
+                        <img src="./images/tin-tuc-1-668x446.jpg" alt="">
+                        <div class="box-text">
+                            <h5>VinFast không còn là ‘hiện tượng’</h5>
+                            <p>Ngày 15/11/2019, Công ty TNHH Sản xuất và Kinh doanh VinFast công bố chương
+                                trình siêu ưu đãi tài</p>
+                        </div>
+                    </div>
+                    <div class="tintuc-item">
+                        <img src="./images/tin-tuc-1-668x446.jpg" alt="">
+                        <div class="box-text">
+                            <h5>VinFast không còn là ‘hiện tượng’</h5>
+                            <p>Ngày 15/11/2019, Công ty TNHH Sản xuất và Kinh doanh VinFast công bố chương
+                                trình siêu ưu đãi tài</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <!-- <img src="./images/logo-vinfast.png"> -->
+                    <h3 class="footer-heading">KẾT NỐI VỚI CHÚNG TÔI</h3>
+                    
+                    <div class="footer-social">
+                        <a href="#">
+                            <ion-icon name="logo-facebook" style="color: #3964bf;"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-google" style="color: #f34a38;"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter" style="color: #5194df;"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-dribbble" style="color: #d03f84;"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">VINFAST HÀ TĨNH</h3>
+                    <ul class="footer-links">
+                        <li class="link">Điện Thoại CSKH: 0911 711 588</li>
+                        <li class="link"> Email: v.kimpq1@vinfast.vn</li>
+                        <li class="link">Website: https://otovinfasthatinh.com</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">VỀ CHÚNG TÔI</h3>
+                    <ul class="footer-links">
+                        <li class="link">Giới thiệu về chúng tôi</li>
+                        <li class="link">Thông điệp chủ tịch HĐQT</li>
+                        <li class="link"> Hình thành và phát triển</li>
+                        <li class="link"> Lĩnh vực hoạt động</li>
+                        <li class="link"> Sứ mệnh – Tầm nhìn</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">THÔNG TIN CẦN BIẾT</h3>
+                    <ul class="footer-links">
+                        <li class="link"> Kinh nghiệm lái xe</li>
+                        <li class="link">Đăng ký tư vấn</li>
+                        <li class="link"> Hệ thống đại lý</li>
+                        <li class="link"> Mua xe trả góp</li>
+                        <li class="link"> Chính sách & điều khoản</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <div class="container">
+                <div class="copy-right-container">
+                    <p>© CopyRight * ĐẠI LÝ Vinfast Hà Tĩnh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

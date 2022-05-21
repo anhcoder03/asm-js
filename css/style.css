@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 0 100px;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px rgb(0 0 0 /15%);
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+}
+.logo{
+    margin-left: 80px;
+    padding-top: 10px;
+    text-align: center;
+}
+.logo a img{
+    width: 70%;
+}
+.menu{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.menu-item{
+    list-style: none;
+}
+.menu-link{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+.menu-link:hover{
+    border-bottom: 2px solid #e2e;
+}
+/* css  slide*/
+#slider{
+    width: 100%;
+    height: 630px;
+    position: relative;
+}
+#slider img{
+    width: 100%;
+    height: 600px;
+}
+#slider #prev button{
+    position: absolute;
+    width:40px ;
+    height:30px;
+    top:50%;
+    left: 1%;
+    border: none;
+    border-radius:  30px 0 0 30px ;
+    background-color: rgb(65, 126, 78);
+}
+#slider #prev button:hover{
+    background-color: red;
+}
+#slider #next button:hover{
+    background-color: red;
+}
+#slider #next button{
+    position: absolute;
+    width:40px ;
+    height: 30px;
+    top: 50%;
+    border: none;
+    right: 1%;
+    border-radius: 0 30px 30px 0;
+    background-color: rgb(65, 126, 78);
+}
+#slider p { 
+    margin: -4px;
+    line-height: 30px;
+    background-color: rgb(178, 178, 192);
+    font-size: 18px; 
+    text-align: center;
+    justify-content: center;
+}
+/* content */
+
+.content{
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+.gioithieu{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-text{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.text-gioithieu{
+    line-height: 30px;
+    font-size: 15px;
+}
+.list-gioithieu{
+    padding: 20px 0;
+}
+.list-gioithieu li{
+    line-height: 35px;
+}
+.sanphamnoibat{
+    margin-top: 30px;
+}
+.heading{
+    text-align: center;
+    color: rgb(68, 68, 68);
+    margin: 0 0 100px 0;
+    font-size: 28px;
+    position: relative;
+}
+.heading::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 2px;
+    background-color: rgb(0, 65, 34);
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sanpham-content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.sanpham-item{
+    width: 33.333%;
+}
+.sanpham-item img{
+    width: 80%;
+}
+.sanpham-item img:hover{
+    transition: all 0.5s linear;
+    transform: scale(1.4);
+}
+.sanpham-item p{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(2, 71, 37);
+    padding-top: 50px;
+}
+.tintuc,
+.vinfast-hatinh{
+    margin-top: 120px;
+}
+.vinfast-hatinh-content{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    /* text-align: center; */
+    align-items: center;
+    width: 100%;
+}
+.content-left{
+    width: 1000px;
+}
+.content-left h2{
+    padding-bottom: 20px;
+}
+.content-left p{
+    padding-bottom: 10px;
+}
+.content-left span{
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-right img{
+    display: block;
+    margin-left: 150px;
+    width: 80%;
+}
+
+/* tintuc */
+
+.tintuc-list{
+    display: flex;
+    gap: 30px;
+}
+.tintuc-item{
+    width: 300px;
+    padding: 15px 15px;
+    border: 1px solid rgb(153, 151, 151);
+    box-shadow: 0 0 5px #333;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.tintuc-item:hover img{
+    transform: scale(1.2);
+}
+.tintuc-item img{
+    width: 100%;
+    transition: all 0.4s linear;
+}
+.box-text{
+    padding-top: 10px;
+}
+.box-text h5{
+    font-size: 15px;
+    padding: 10px 0;
+    color: rgb(34, 34, 202);
+}
+.box-text{
+    color: #000;
+}
+
+
+/* footer */
+.footer{
+    background-color: rgb(10, 50, 110);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 50px 0 80px;
+}
+
+
+.footer-social{
+    display: flex;
+    gap: 0 16px;
+}
+.footer-social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 100rem;
+    background-color: white;
+}
+.footer-social a:hover{
+    background-color: rgba(229, 227, 227, 0.84);
+}
+.footer-heading{
+    margin-bottom: 25px;
+    color: #fff;
+}
+.footer-links{
+    list-style: none;
+}
+.link{
+    font-size: 16px;
+    line-height: 1.2;
+    padding-bottom: 1px;
+    cursor: pointer; 
+    color: #fff;
+}
+.link:hover{
+    border-bottom:1px solid #fff ;
+}
+.footer .copy-right{
+    background-color: rgba(56, 128, 170, 0.541);
+    display: flex;
+    text-align: center;
+    color: #fff;
+}
+.copy-right-container{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+/* trang san pham */
+/* sanpham */
+
+.list-sanpham{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.item-sanpham:hover{
+    border: none;
+    border: 1px solid red;
+    box-shadow: none;
+}
+.item-sanpham{
+    display: flex;
+    flex-direction: column;
+    width: 33.3333%;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(83, 76, 76);
+   
+}
+.item-sanpham a img{
+    transition: all 0.6s linear;
+    width: 100%;
+}
+.item-sanpham a:hover img {
+    margin-left: 10px;
+}
+.item-sanpham h4{
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item-sanpham p {
+    padding: 10px ;
+    font-size: 14px;
+}
+.item-sanpham p .price{
+    font-size: 20px;
+    color: red;
+}
+.item-sanpham p sup{
+    font-size: 8px;
+}
+.item-sanpham button{
+    margin-bottom: 10px;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+}
+.item-sanpham button:hover{
+    background-color: red;
+}
+
+
+
+
+/* trang tin tuc */
+
+.tintuc-lists{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.tintuc--item{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+    box-shadow: 0 0 2px gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+.tintuc--item img{
+    width: 30%;
+}
+
+/* form dang ky */
+.form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+form{
+    padding: 30px 20px;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;
+}
+.form-group1,
+.form-group{
+    padding-bottom: 10px;
+    position: relative;
+}
+#iframe4,
+#iframe2,
+#iframe3,
+#iframe{
+    width: 100%;
+    border: 1px solid #888;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.form-group span{
+    display: block;
+    font-size: 12px;
+    /* color: red; */
+}
+.form-group.error span{
+    color: red;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.form-group.success input {
+    border: 1px solid rgb(19, 228, 0);
+}
+.form-group.error input{
+    border: 1px solid red;
+}
+.loaixe,
+.banglai,
+.mau,
+.gender{
+    color: red;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #888;
+    padding-left: 10px;
+}
+.ghichu:focus,
+.input:focus{
+    border: 1px solid rgb(61, 114, 175);
+    box-shadow: 0 0 5px blue;
+
+}
+.ghichu{
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #888;
+    padding-left: 10px;
+}
+.p {
+    color: red;
+}
+.btn-submit{
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    background-color: rgb(61, 114, 175);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-submit:hover{
+    background-color: rgb(10, 101, 204);
+    cursor: pointer;
+}
+.luu-y{
+    padding-top: 15px;
+    color: red;
+}
+
+.fa-xmark,
+.fa-check{
+    position: absolute;
+    /* z-index: 1; */
+    top: 40%;
+    right: 5px;
+}
+.fa-xmark{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    top: 32%;
+    
+}
+.fa-check{
+    color: rgb(0, 255, 30);
+    font-weight: bold;
+    font-size: 20px;
+}
